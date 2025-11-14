@@ -8,7 +8,7 @@ const Home = () => {
         
         <img 
           src="Keyyes.gif" 
-          alt="รูปโปรไฟล์ของกฤษฎา"
+          alt=""
           className="profile-pic"
         />
         
