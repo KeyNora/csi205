@@ -1,0 +1,41 @@
+.page-container {
+    display: flex;
+    justify-content: center; /* center grid horizontally */
+    align-items: flex-start;
+    min-height: 100vh; /* full viewport height */
+    padding: 2rem;
+    background-color: #f8f9fa; /* optional light background */
+}
+
+.products-itemps-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.product-card {
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px; /* consistent height for all placeholders */
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .products-itemps-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .products-itemps-container {
+    grid-template-columns: 1fr;
+  }
+}
